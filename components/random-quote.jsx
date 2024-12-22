@@ -2,6 +2,13 @@
 
 import { useEffect, useState } from 'react';
 
+import { createClient } from '@supabase/supabase-js'
+
+const supabase = createClient(
+  process.env.DATABASE_URL,
+  process.env.SUPABASE_SERVICE_API_KEY
+)
+
 const randomQuoteUrl = '/quotes/random';
 
 export function RandomQuote() {
