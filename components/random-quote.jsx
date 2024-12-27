@@ -2,31 +2,7 @@
 
 import { useEffect, useState } from 'react';
 
-import { createClient } from '@supabase/supabase-js'
-
-// const supabase = createClient(
-//   process.env.DATABASE_URL,
-//   process.env.SUPABASE_SERVICE_API_KEY
-// )
-
-console.log(process);
 const randomQuoteUrl = '/quotes/random';
-
-const testPost = async () => {
-    const { data, error } = await supabase
-      .from('notes')
-      .insert([
-        { note: 'I need to not forget this' },
-      ])
-  
-    console.log(data, error)
-    
-    if (error) {
-      return Response.json({ error }, { status: 500 })
-    }
-  
-    return Response.json({ data })
-}
 
 export function RandomQuote() {
     const [quote, setQuote] = useState(null);
@@ -46,7 +22,6 @@ export function RandomQuote() {
             }
         };
         fetchQuote();
-        testPost();
     }, []);
 
     return (
