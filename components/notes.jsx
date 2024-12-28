@@ -5,7 +5,6 @@ import { supabase } from '../utils';
 
 export function Notes() {
   const [data, setData] = useState([]);
-  console.log('supabase', supabase)
 
   useEffect(() => {
     const fetchData = async () => {
