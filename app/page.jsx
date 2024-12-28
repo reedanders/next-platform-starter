@@ -1,7 +1,4 @@
 import { Notes } from 'components/notes';
-import { getNetlifyContext } from 'utils';
-
-const ctx = getNetlifyContext();
 
 export default function Page() {
     return (

@@ -2,12 +2,18 @@ import '../styles/globals.css';
 import { Footer } from '../components/footer';
 import { Header } from '../components/header';
 
+export const viewport = {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 1,
+    userScalable: false
+  };
+
 export const metadata = {
   title: 'PedigreeSync - Sheep Pedigree Management',
   description: 'Unofficial web implementation of PedigreeMaster (NSIP) for efficient sheep pedigree data management and breeding decisions.',
   keywords: ['sheep', 'pedigree', 'NSIP', 'breeding', 'livestock', 'agriculture', 'PedigreeMaster'],
   authors: [{ name: 'PedigreeSync Team' }],
-  viewport: 'width=device-width, initial-scale=1',
   openGraph: {
     title: 'PedigreeSync - Sheep Pedigree Management',
     description: 'Unofficial modern web implementation of PedigreeMaster (NSIP) for efficient sheep pedigree data management and breeding decisions.',
