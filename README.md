@@ -1,43 +1,86 @@
-# Next.js on Netlify Platform Starter
+# PedigreeSync: Unofficial PedigreeMaster Web Application
 
-[Live Demo](https://nextjs-platform-starter.netlify.app/)
+This project is an **unofficial implementation of PedigreeMaster**, a widely-used software in the National Sheep Improvement Program (NSIP). This application aims to modernize and simplify data recording and analysis for livestock breeders by offering a phased implementation of core functionalities.
 
-A modern starter based on Next.js 14 (App Router), Tailwind, daisyUI, and [Netlify Core Primitives](https://docs.netlify.com/core/overview/#develop) (Edge Functions, Image CDN, Blob Store).
+## Vision
 
-In this site, Netlify Core Primitives are used both implictly for running Next.js features (e.g. Route Handlers, image optimization via `next/image`, and more) and also explicitly by the user code. 
+The goal of this project is to provide a web-based alternative to PedigreeMaster with enhanced usability and accessibility. The application will eventually incorporate all functionalities of PedigreeMaster, with additional modern features to streamline data management for livestock improvement programs.
 
-Implicit usage means you're using any Next.js functionality and everything "just works" when deployed - all the plumbing is done for you. Explicit usage is framework-agnostic and typically provides more features than what Next.js exposes.
+---
 
-## Deploying to Netlify
+## Key Features (Planned Development Phases)
 
-This site requires [Netlify Next Runtime v5](https://docs.netlify.com/frameworks/next-js/overview/) for full functionality. That version is now being gradually rolled out to all Netlify accounts. 
+1. **Flock Data Recording**:
+   - Allow users to input flock data, including animal IDs, pedigree details, and trait measurements.
+   - Support for data export in formats compatible with PedigreeMaster for further analysis.
 
-After deploying via the button below, please visit the **Site Overview** page for your new site to check whether it is already using the v5 runtime. If not, you'll be prompted to opt-in to to v5.
+2. **Data Analysis Import and Display**:
+   - Import analyzed data (e.g., Estimated Breeding Values (EBVs)).
+   - Provide intuitive data visualizations and detailed reports.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/next-platform-starter)
+3. **RFID Integration** (Future Phase):
+   - Enable data import from RFID devices for real-time livestock tracking.
+   - Streamline integration of electronic records with pedigree data.
 
-## Developing Locally
+4. **Other Advanced Features** (Future Phase):
+   - Incorporate functionalities like genetic trend analysis and comprehensive reporting tools.
+   - Provide robust backup and data validation options.
 
-1. Clone this repository, then run `npm install` in its root directory.
+---
 
-2. For the starter to have full functionality locally (e.g. edge functions, blob store), please ensure you have an up-to-date version of Netlify CLI. Run:
+## Getting Started
 
-```
-npm install netlify-cli@latest -g
-```
+### Prerequisites
 
-3. Link your local repository to the deployed Netlify site. This will ensure you're using the same runtime version for both local development and your deployed site.
+Ensure you have the following installed on your system:
+- Node.js (v16 or higher)
+- A compatible web browser
+- Access to an NSIP-compliant flock dataset (optional for testing)
 
-```
-netlify link
-```
+## Usage
 
-4. Then, run the Next.js development server via Netlify CLI:
+1. **Input Flock Data**:
+   - Navigate to the `Flock` section to record animal IDs, weights, and other relevant data.
+   - Use the export feature to generate PedigreeMaster-compatible files.
 
-```
-netlify dev
-```
+2. **View and Import Analyzed Data**:
+   - Access the `Analysis` section to upload EBVs and view them through interactive dashboards.
 
-If your browser doesn't navigate to the site automatically, visit [localhost:8888](http://localhost:8888).
+3. **Future Features**:
+   - RFID integration and additional data management tools will be available in subsequent updates.
 
+---
 
+## Contributing
+
+We welcome contributions from the community to help build and refine this tool. To contribute:
+1. Fork the repository.
+2. Create a feature branch: `git checkout -b feature-name`.
+3. Commit your changes: `git commit -m "Add feature-name"`.
+4. Push to the branch: `git push origin feature-name`.
+5. Open a pull request.
+
+---
+
+## References
+
+- [National Sheep Improvement Program (NSIP)](https://nsip.org/)
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## Roadmap
+
+- [ ] Phase 1: Flock Data Recording and Export
+- [ ] Phase 2: Import and Display Analyzed Data
+- [ ] Phase 3: RFID Integration
+- [ ] Phase 4: Advanced Reporting and Graphing
+
+---
+
+Let me know if you'd like to refine any sections or add specific content based on your goals!
