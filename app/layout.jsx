@@ -3,10 +3,27 @@ import { Footer } from '../components/footer';
 import { Header } from '../components/header';
 
 export const metadata = {
-    title: {
-        template: '%s | Netlify',
-        default: 'Netlify Starter'
-    }
+  title: 'PedigreeSync - Sheep Pedigree Management',
+  description: 'Unofficial web implementation of PedigreeMaster (NSIP) for efficient sheep pedigree data management and breeding decisions.',
+  keywords: ['sheep', 'pedigree', 'NSIP', 'breeding', 'livestock', 'agriculture', 'PedigreeMaster'],
+  authors: [{ name: 'PedigreeSync Team' }],
+  viewport: 'width=device-width, initial-scale=1',
+  openGraph: {
+    title: 'PedigreeSync - Sheep Pedigree Management',
+    description: 'Unofficial modern web implementation of PedigreeMaster (NSIP) for efficient sheep pedigree data management and breeding decisions.',
+    type: 'website',
+    locale: 'en_US',
+    siteName: 'PedigreeSync'
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'PedigreeSync',
+    description: 'Sheep pedigree management platform',
+  },
+  other: {
+    'application-name': 'PedigreeSync',
+    'robots': 'index, follow',
+  }
 };
 
 export default function RootLayout({ children }) {
