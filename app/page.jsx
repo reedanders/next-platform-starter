@@ -3,6 +3,7 @@ import { Card } from 'components/card';
 import { RandomQuote } from 'components/random-quote';
 import { Markdown } from 'components/markdown';
 import { ContextAlert } from 'components/context-alert';
+import { Notes } from 'components/notes';
 import { getNetlifyContext } from 'utils';
 
 const cards = [
@@ -53,6 +54,9 @@ export default function Page() {
                 <Markdown content={postDynamicContentExplainer} />
             </section>
             {/* !!cards?.length && <CardsGrid cards={cards} /> */}
+            <section className="flex flex-col gap-4">
+                <Notes />
+            </section>
         </main>
     );
 }

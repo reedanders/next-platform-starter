@@ -1,4 +1,5 @@
 import { uniqueNamesGenerator, adjectives, animals, NumberDictionary } from 'unique-names-generator';
+import { createClient } from '@supabase/supabase-js';
 
 /*
 Get the actual size of a resource downloaded by the browser (e.g. an image) in bytes.
@@ -35,3 +36,8 @@ export function uniqueName() {
 }
 
 export const uploadDisabled = process.env.NEXT_PUBLIC_DISABLE_UPLOADS?.toLowerCase() === "true";
+
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+
+export const supabase = createClient(supabaseUrl, supabaseAnonKey);
