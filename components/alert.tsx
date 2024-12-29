@@ -1,4 +1,11 @@
-export function Alert({ children, className }) {
+import { ReactNode } from 'react';
+
+interface AlertProps {
+    children: ReactNode;
+    className?: string;
+}
+
+export function Alert({ children, className }: AlertProps) {
     return (
         <div className={['alert alert-info', className].join(' ')}>
             <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 fill-current shrink-0" viewBox="0 0 24 24">
