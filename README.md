@@ -1,10 +1,10 @@
 # PedigreeSync: Unofficial PedigreeMaster Web Application
 
-This project is an **unofficial implementation of PedigreeMaster**, a widely-used software in the National Sheep Improvement Program (NSIP). This application aims to modernize and simplify data recording and analysis for livestock breeders by offering a phased implementation of core functionalities.
+This project is an **unofficial implementation of PedigreeMaster**, a widely used Windows-based software in the National Sheep Improvement Program (NSIP). This application aims to modernize and simplify data recording and analysis for livestock breeders by offering a phased implementation of core functionalities.
 
 ## Vision
 
-The goal of this project is to provide a web-based alternative to PedigreeMaster with enhanced usability and accessibility. The application will eventually incorporate all functionalities of PedigreeMaster, with additional modern features to streamline data management for livestock improvement programs.
+The goal of this project is to provide a web-based alternative to the Windows-based PedigreeMaster with enhanced usability and accessibility. The application will eventually incorporate all functionalities of PedigreeMaster, with additional modern features to streamline data management for livestock improvement programs.
 
 ---
 
