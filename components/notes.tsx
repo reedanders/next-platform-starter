@@ -3,14 +3,20 @@
 import { useEffect, useState } from 'react';
 import { supabase } from '../utils';
 
+interface Note {
+  id: string;
+  created_at: string;
+  note: string;
+}
+
 export function Notes() {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState<Note[]>([]);
 
   useEffect(() => {
     const fetchData = async () => {
       const { data, error } = await supabase.from('notes').select('*');
       if (error) console.error(error);
-      else setData(data);
+      else setData(data || []);
     };
 
     fetchData();
