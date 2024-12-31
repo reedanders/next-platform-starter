@@ -19,12 +19,14 @@ jobs:
       run: npx playwright install --with-deps
     - name: Determine branch deploy URL
       id: branch-url
-      run: echo "BRANCH_URL=https://${{ github.head_ref || github.ref_name }}--pedigreesync.netlify.app/" >> $GITHUB_ENV
+      run: echo "DEPLOY_URL=https://deploy-preview-${{ github.event.pull_request.number }}--pedigreesync.netlify.app/" >> $GITHUB_ENV
+    - name: Wait for Netlify deploy
+      run: npx wait-on $DEPLOY_URL
     - name: Run Playwright Tests
       env:
         BRANCH_URL: ${{ env.BRANCH_URL }}
       run: |
-        npx playwright test --url $BRANCH_URL
+        npx playwright test 
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:
